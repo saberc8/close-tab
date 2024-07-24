@@ -1,0 +1,26 @@
+{
+  "name": "Close Tab",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "一键关闭所有的csdn, google.com, baidu.com页面",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.csdn.net/*",
+    "https://*.google.com/*",
+    "https://*.baidu.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    }
+  }
+}
